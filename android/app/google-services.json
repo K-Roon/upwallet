@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "103091411773",
+    "project_id": "upwallet-764a8",
+    "storage_bucket": "upwallet-764a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103091411773:android:ef5fcd149e86ddcb750354",
+        "android_client_info": {
+          "package_name": "com.kroon.upwallet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOddmF0tuSWcIKoGImExlwRIqEKzYRa74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
