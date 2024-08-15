@@ -2,24 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('upwallet'),
+          title: const Text('upwallet'),
         ),
-        body: PassForm(),
+        body: const PassForm(),
       ),
     );
   }
 }
 
 class PassForm extends StatefulWidget {
+  const PassForm({super.key});
+
   @override
   _PassFormState createState() => _PassFormState();
 }
@@ -52,14 +56,14 @@ class _PassFormState extends State<PassForm> {
         children: [
           TextField(
             controller: _controller,
-            decoration: InputDecoration(labelText: 'Enter Code'),
+            decoration: const InputDecoration(labelText: 'Enter Code'),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
               _addPassToWallet(_controller.text);
             },
-            child: Text('Add to Wallet'),
+            child: const Text('Add to Wallet'),
           ),
         ],
       ),
